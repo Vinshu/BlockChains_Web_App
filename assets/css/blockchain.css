@@ -1,0 +1,229 @@
+body, html { height:100%; margin:0}
+
+.container-fluid, .contentBox {height:100%;}
+.Maincontainer { height:88%;}
+
+
+
+.left-panel {height:100%;}
+body{font-family:'sohogothic',Helvetica,Arial,sans-serif!important;  color:#5e5e5e!important; font-size: 14px; line-height: 1.42857143; color: #333; background-color: #fff; }
+
+
+@font-face {
+    font-family:sohogothic;
+    src: url(../fonts/SohoGothicPro-Regular.otf) format('truetype'),
+	url(../fonts/5e7b8c3d1aeda6167d8ce340a037d64a.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/5e7b8c3d1aeda6167d8ce340a037d64a.woff2) format('woff2'),
+  url(../fonts/5e7b8c3d1aeda6167d8ce340a037d64a.woff) format('woff'),
+  url(../fonts/5e7b8c3d1aeda6167d8ce340a037d64a.ttf) format('truetype')
+} 
+
+
+
+@font-face {
+    font-family:sohogothicbold;
+    src: url(../fonts/SohoGothicPro-Bold.otf) format('truetype');
+} 
+@font-face {
+    font-family:sohogothicbold;
+    src: url(../fonts/SohoGothicPro-Medium.otf) format('truetype');
+} 
+
+
+.header {margin-top:20px;}
+.breadcrum{ background-color:#e8e8e8; text-align:center; font-size:1.45em; font-weight:bold; margin-top:10px; padding:10px;} 
+
+.left-panel { background-color:#f8f8f9; margin:0!important;}
+
+.Maincontainer {padding:0!important;}
+.newPoll { font-size:1.5em;  color:#cf022b;}
+.newPoll:before { margin:10px;}
+h1{ font-family:'sohogothic',Helvetica,Arial,sans-serif!important;  color:#5e5e5e!important;}
+h3 { font-family:'sohogothic',Helvetica,Arial,sans-serif!important; display:inline-block;}
+.infopadding{ padding:10px;}
+
+.infoblock {border:1px solid #ccc; font-size:1.3em; font-weight:bold}
+
+.infoblock span {color:#cf022b}
+
+.userDetails {float:right; margin-top:-10px;}
+
+.userDetails .glyphicon {font-size:2em; position:relative; top:10px;}
+
+.userDetails .user-txt {margin-left:10px; margin-right:50px; display:inline-block}
+
+.pollBox, .welcomeBox {
+	width:80%; margin:0 auto; ;
+}
+
+.pollBox .header {
+	background:#cf022b;
+	color:#fff;
+	padding:10px;
+	font-size:1.8em;
+	text-transform:uppercase;
+}
+
+.pollBox .body {
+	background:#e4e4e4;
+	color:#000;
+	padding:20px;
+}
+
+.pollBox .footer {
+	color:#000;
+	padding:20px;
+	text-align:center;
+}
+
+.pollBox .footer button{
+	background:#cf022b;
+	border:0;
+	border-radius:50px;
+	color:#fff;
+	padding:5px 30px 5px 30px;
+	font-size:1.5em;
+}
+
+.footer button{
+	background:#d9d9d9;
+	border:0;
+	border-radius:50px;
+	color:#000;
+	padding:5px 30px 5px 30px;
+	font-size:1em;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+
+.pollBox .form-group { font-size:1.5em;}
+
+.welcomeBox .footer button{
+	background:#ef7d00;
+	border:0;
+	border-radius:50px;
+	color:#fff;
+	padding:5px 30px 5px 30px;
+	font-size:1.5em;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+
+.welcomeBox .body {
+	background:#cf022b;
+	color:#fff;
+	padding:20px;
+	text-align:center;
+	font-size:1.5em;
+}
+
+.welcomeBox .footer {
+	color:#000;
+	text-align:center;
+}
+
+.pollResult {width:100%;}
+
+.pollResult .footer button{
+	background:#d9d9d9;
+	border:0;
+	border-radius:50px;
+	color:#000;
+	padding:5px 30px 5px 30px;
+	font-size:1.5em;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+
+.pollResult .footer {
+	color:#000;
+	text-align:center;
+}
+
+.pollResult .header {
+	color:#000;
+	font-size:1.8em;
+	text-transform:uppercase;
+	padding-bottom:20px
+}
+
+.pollResult .body h3 {
+	font-size:1.2em;
+	font-weight:bold;
+	display:inline-block;
+	margin-top:10px;
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    background:url(../images/radio1.png) 0 3px no-repeat;
+    font-family:Arial, sans-serif;
+	padding:0 10px 5px 35px;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color:$DarkBrown;
+}
+
+input[type="radio"]:checked + label{
+     background:url(../images/radio2.png) 0 3px no-repeat;
+}
+
+input[type="radio"] + label,
+input[type="radio"]:checked + label {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+
+.panel-body {
+    
+    padding: 8px 15px!important;
+}
+
+.panel-body:hover {
+    
+    background:#f5f5f5!important;
+}
+
+
+.indexSopraSterialogo{ text-align:center; margin-top:50px;}
+
+.loginBlock{ 
+text-align:center; 
+background-image:url(../images/molecules.png); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; background-color:#f5f5f5; background-size:80%;}
+	
+	
+	.loginBox{-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px; background:#fff; padding:10px;
+    box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.3); margin: 0 auto; margin-top:250px;
+	width:450px; }
+	
+	.loginTextbox{ width:350px!important; margin:0 auto; height:50px!important; background:#e5e7e9!important;} 
+	.loginButton{ background:#cf022b; width:350px; text-transform:uppercase; font-size:2em!important; font-weight:bold; color:#fff;}
+	.loginButton:hover{ background:#565656; width:350px; text-transform:uppercase; font-size:2em!important; color:#fff!important;}
+
+.privacyPolicy {margin-top:20px; }	
+
+.contentBox .form-inline label{ padding:8px 0 5px 30px!important; margin-right:20px; }
+.textboxMedium {width:300px!important;}
+
+
+

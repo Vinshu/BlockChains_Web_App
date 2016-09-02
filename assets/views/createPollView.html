@@ -1,0 +1,83 @@
+
+ <div class="col-md-10">
+  <h1>Create your Poll here</h1> <hr>
+  
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Type the Poll title here</label>
+      <input type="text" ng-model="poll.title" class="form-control" id="pollTitle" aria-describedby="emailHelp" >
+     
+    <small id="emailHelp" class="form-text text-muted">Example: Blockchain benefit</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Type the Poll Question here</label>
+    <input type="text" ng-model="poll.question" class="form-control" id="exampleInputPassword1" >
+       
+    <small id="emailHelp" class="form-text text-muted">Example: Do you think Blockchain is the future?</small>
+  </div>
+  
+
+ <div id="pollOptionsList" class="form-group">
+               
+              </div>
+
+<button type="submit" class="btn btn-default" for="exampleInputPassword1" ng-click="addInputField()">Add new option field</button>
+            
+
+   <!-- <div class="form-group">
+    <label for="exampleInputPassword1">Type your options</label>
+    <input type="text" class="form-control textboxMedium" id="exampleInputPassword1" >
+   </div> -->
+  
+
+  <div class="form-group">Allow Double Voting
+<div class="form-inline">
+    <div class="radio">
+      
+      <input type="radio" ng-model="poll.allowDoubleVoting" value="Yes" name="optionsRadios" id="optionsRadios1" value="option1" checked>   <label for="optionsRadios1">
+        Yes
+        </label>
+  </div>
+  <div class="radio">
+    
+    <input type="radio" ng-model="poll.allowDoubleVoting" value="No" name="optionsRadios" id="optionsRadios2" value="option2">
+    <label for="optionsRadios2">
+      No
+      </label>
+  </div> </div>
+  
+</div>
+
+  <div class="form-group">
+                <label for=" ">Start Date and Time of Poll</label>
+                <div class="input-group date form_datetime col-md-4" data-date="2016-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                    <input class="form-control" ng-model="poll.startDateTime" size="16" type="text" value="" readonly>
+                  
+					<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+				<input type="hidden" id="dtp_input1" value="" /><br/>
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleInputPassword1">End Date and Time of Poll</label>
+                <div class="input-group date form_datetime col-md-4" data-date="2016-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                    <input class="form-control" ng-model="poll.endDateTime" size="16" type="text" value="" readonly>
+                  
+					<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+				<input type="hidden" id="dtp_input1" value="" />
+            </div>
+			
+          
+	      <div class="form-group">
+    <label for="exampleInputEmail1">Maximum Votes</label>
+      <input  type="text" ng-model="poll.maxVotes" class="form-control textboxMedium" id="pollTitle" aria-describedby="emailHelp" >
+	      </div>
+  <div class="footer">
+<button type="submit" ng-click="createPoll()">Submit</button> <button type="reset" >reset</button>
+</div>
+
+</form>
+
+<pre>poll = {{poll | json}}</pre>
+  </div>

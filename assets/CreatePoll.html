@@ -1,0 +1,157 @@
+<!DOCTYPE html ng-app="BC_APP">
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<link rel="stylesheet" href="css/blockchain.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ --><script type="text/javascript" src="js/bootstrap-datepicker.js"> </script>
+<script src="../node_modules/angular/angular.min.js"></script>
+
+<script src="../node_modules/angular-route/angular-route.min.js"></script>
+<script src="../app/app.js"></script>
+<script src="../app/controllers/createPollController.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>:blockchain::</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<!-- ---------------------------------------------------- Top Header -------------------------------------------------- -->
+<div class="row">
+<div class="col-md-12 header">
+<div class="col-md-3"><img src="images/logo.png" alt="Sopra Steria"></div>
+<div class="col-md-3">Delivering Transformation.Together.</div>
+<div class="col-md-6"><div class="userDetails"><span class="glyphicon glyphicon-user"></span><span class="user-txt">seema-lal.gulabrani@soprasteria.com</span><span class="glyphicon glyphicon-off"></span></div></div>
+</div>
+</div>
+<!-- ---------------------------------------------------- Top Header ------------------------------------------------------ -->
+
+
+<!-- ---------------------------------------------------- breadcrum ------------------------------------------------------ -->
+<div class="row">
+<div class="col-md-12 breadcrum"> Sopra Steria Voting System </div>
+</div>
+
+<!-- ---------------------------------------------------- breadcrum ------------------------------------------------------ -->
+
+
+
+<!-- ---------------------------------------------------- Left panel and body ------------------------------------------------------ -->
+<div class="row contentBox">
+<div class="col-md-12 Maincontainer">
+
+<!-- ---------------------------------------------------- Left panel ------------------------------------------------------ -->
+
+
+<div class="col-md-2 left-panel">
+<div> <button class="glyphicon glyphicon-plus-sign newPoll" > <a href="#/newPoll"><h3>New Poll</h3></button> </div>
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Active Polls</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Poll One</div>
+        <div class="panel-body">Poll Two</div>
+		<div class="panel-body">Poll Three</div>
+		<div class="panel-body">Poll Four</div>
+		<div class="panel-body">Poll Five</div>
+      </div>
+    </div>
+	<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse2">Expired Polls</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Poll One</div>
+        <div class="panel-body">Poll Two</div>
+		<div class="panel-body">Poll Three</div>
+		<div class="panel-body">Poll Four</div>
+		<div class="panel-body">Poll Five</div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- ---------------------------------------------------- Left panel ------------------------------------------------------ -->
+
+<!-- ---------------------------------------------------- BODY ------------------------------------------------------ -->
+
+
+  <!-- start of ng-view -->
+
+
+<ng-view>
+
+  <!-- End of ng-view -->
+  
+<!-- ---------------------------------------------------- BODY ------------------------------------------------------ -->
+</div>
+
+<!-- ---------------------------------------------------- Left panel and body ------------------------------------------------------ -->
+</div>
+
+</div>
+
+
+<script type="text/javascript" src="jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		forceParse: 0,
+        showMeridian: 1
+    });
+	$('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
+	$('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 1,
+		minView: 0,
+		maxView: 1,
+		forceParse: 0
+    });
+</script>
+
+</body>
+</html>
