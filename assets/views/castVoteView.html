@@ -1,0 +1,51 @@
+<!-- -----------------This section contains the wallet details------------------ -->
+<div class="col-md-10 infopadding">
+<div class="col-md-6 infoblock"> My Ethereum Public Address: <br> <span>21312323123131313</span> <hr> My Ether Balance: <br> <span>21312323123131313</span> </div>
+<div class="col-md-6 infoblock"> My Lisk Public Address:<br> <span>21312323123131313</span><br>   <hr> My Lisk Balance: <br> <span>21312323123131313</span></div>
+
+
+<!-- -----------------below is the POll content----------------- -->
+
+
+<div class="col-md-12"> <hr>  <h1>Cast your vote here </h1> 
+<div class="pollBox">
+<div class="header">{{activePolls.question}}</div>
+<div class="body">
+<form>
+  <div class="form-group">
+  <div class="radio">
+  
+    <input ng-model="choice" ng-value="activePolls.option1" type="radio" name="optionsRadios" id="optionsRadios1"  checked>
+	<label for="optionsRadios1">
+    {{activePolls.option1}}
+  </label>
+</div>
+<div class="radio">
+ 
+    <input ng-model="choice" ng-value="activePolls.option2" type="radio" name="optionsRadios" id="optionsRadios2" >
+	<label for="optionsRadios2">
+   {{activePolls.option2}}
+  </label>
+</div>
+<div class="radio">
+  
+    <input ng-model="choice" ng-value="activePolls.option3" type="radio" name="optionsRadios" id="optionsRadios3" >
+	<label for="optionsRadios3">
+{{activePolls.option3}}
+  </label>
+</div>
+<div class="radio">
+  
+    <input ng-model="choice" ng-value="activePolls.option4" type="radio" name="optionsRadios" id="optionsRadios4" >
+	<label for="optionsRadios4">
+{{activePolls.option4}}
+  </label>
+</div>
+  </div>
+  </form>
+</div>
+<div class="footer">
+<button type="submit" ng-click="castVote()">VOTE</button>
+</div>
+</div>
+</div>

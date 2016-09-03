@@ -1,11 +1,31 @@
-angular.module("BC_APP").controller('createPollController',function($scope){
+angular.module("BC_APP").controller('createPollController',function($scope,$http,$location,$compile){
 
 //json object to store the form input details in json form. Values here will be updated by ng-models in the  cretePollView html
 $scope.poll={};
 
 //function to make ajax post request to send the input form json data in poll object to application server
 $scope.createPoll=function(){
-$http({ method: "POST", url: "http://192.168.0.136:4080/api/createPollEtherium", data: $scope.poll , cache: false });
+
+
+	console.log($scope.poll);
+
+if($scope.poll.title &&$scope.poll.question&&$scope.poll.allowDoubleVoting&&$scope.poll.maxVotes){
+$http({ method: "POST", url: "http://localhost:4080/api/createPollEtherium",data: JSON.stringify($scope.poll)}, {headers: {'Content-Type': 'application/json'} }).  success(function(data, status, headers, config) {
+        // this callback will be called asynchronously when the response is available
+        console.log("data posted");
+      }).
+      error(function(data, status, headers, config) {
+        // called asynchronously if an error occurs when the response is available
+        console.log("error");
+      });
+
+}
+
+else{
+	alert("Fill the poll form completely...");
+	console.log("Poll form not filled completely...")
+}
+
 }
 
 
@@ -30,6 +50,15 @@ $scope.countBox += 1;
 parent.appendChild(inputSpace);
 parent.appendChild(input);
 }
- 
+
+//function to highlight tabs when using SPA
+/*
+
+
+$scope.go = function ( path ) {
+  $location.path( path );
+};
+
+*/ 
 
 });

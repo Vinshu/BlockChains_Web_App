@@ -1,5 +1,5 @@
-<!DOCTYPE html ng-app="BC_APP">
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" ng-app="BC_APP">
 
 <head>
 
@@ -25,6 +25,7 @@
 <script src="../node_modules/angular-route/angular-route.min.js"></script>
 <script src="../app/app.js"></script>
 <script src="../app/controllers/createPollController.js"></script>
+<script src="../app/controllers/castVoteController.js"></script>
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -62,7 +63,7 @@
 
 
 <div class="col-md-2 left-panel">
-<div> <button class="glyphicon glyphicon-plus-sign newPoll" > <a href="#/newPoll"><h3>New Poll</h3></button> </div>
+<div> <span class="glyphicon glyphicon-plus-sign newPoll"><a href="#/"> <!-- <a href="#/newPoll"> --><h3>New Poll</h3></span> </div>
 <div class="panel-group">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -71,11 +72,11 @@
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse">
-        <div class="panel-body">Poll One</div>
-        <div class="panel-body">Poll Two</div>
+        <div class="panel-body"><a href="#/castVote">Poll One</div>
+        <!-- <div class="panel-body">Poll Two</div>
 		<div class="panel-body">Poll Three</div>
 		<div class="panel-body">Poll Four</div>
-		<div class="panel-body">Poll Five</div>
+		<div class="panel-body">Poll Five</div> -->
       </div>
     </div>
 	<div class="panel panel-default">
