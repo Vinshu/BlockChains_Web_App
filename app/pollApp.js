@@ -1,5 +1,5 @@
 
-var app = angular.module("BC_APP", ["ngRoute"]);
+var app = angular.module("pollApp", ["ngRoute"]);
 
 //config function for making SPA
 app.config(function($routeProvider) {

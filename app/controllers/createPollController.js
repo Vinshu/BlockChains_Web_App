@@ -1,4 +1,4 @@
-angular.module("BC_APP").controller('createPollController',function($scope,$http,$location,$compile){
+angular.module("pollApp").controller('createPollController',function($scope,$http,$location,$compile){
 
 //json object to store the form input details in json form. Values here will be updated by ng-models in the  cretePollView html
 $scope.poll={};
